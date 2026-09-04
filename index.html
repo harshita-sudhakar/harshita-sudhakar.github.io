@@ -274,7 +274,23 @@
         <h1>Where I've Worked</h1>
       </div>
       <div class="entry-row"><div><div class="t-line"><span class="t">Concorde Research Technologies</span><span class="t-date">Starting Sept 2026</span></div><p class="empty-note">Details to come!</p></div></div>
-      <div class="entry-row"><div><div class="t-line"><span class="t">TestuGo</span><span class="t-date">Starting Sept 2026</span></div><p class="empty-note">Through UMD Vertically Integrated Projects, details to come!</p></div></div>
+      <div class="entry-row"><div>
+        <div class="t-line">
+          <span class="t">Ekta</span><span class="t-date">June 2026 – present</span>
+          <button class="entry-toggle" aria-expanded="false" data-toggle="ekta">
+            <svg class="chev" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5.5L7 9.5L11 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="entry-detail" id="detail-ekta">
+          <div class="entry-detail-inner">
+            <ul class="bullets">
+              <li>Developing full-stack features for a South Asian performing arts platform in TypeScript and React, contributing to client-side UI and backend service layers</li>
+              <li>Architecting a Competition/Team Acceptance Tracking system supporting 80+ competitions and 330+ teams, streamlining acceptance notifications and enabling teams to accept or decline offers directly on the platform</li>
+              <li>Writing internal documentation for the platform's service layer and workflows, making it easier for new contributors to onboard and extend the codebase</li>
+            </ul>
+          </div>
+        </div>
+      </div></div>
       <div class="entry-row"><div>
         <div class="t-line">
           <span class="t">Torchbearer AI</span><span class="t-date">May 2026 – Aug 2026</span>
@@ -290,23 +306,6 @@
               <li>Implemented RAG-based memory retrieval so the mentor recalls prior user context across sessions, building on the existing conversation-history and user-notes persistence</li>
               <li>Added text-to-speech and speech-to-text so users could hold fully spoken conversations with the mentor, not just type</li>
               <li>Built multi-language support into the coaching flow so users could converse and receive coaching in their preferred language</li>
-            </ul>
-          </div>
-        </div>
-      </div></div>
-      <div class="entry-row"><div>
-        <div class="t-line">
-          <span class="t">Ekta</span><span class="t-date">June 2026 – present</span>
-          <button class="entry-toggle" aria-expanded="false" data-toggle="ekta">
-            <svg class="chev" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5.5L7 9.5L11 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-        </div>
-        <div class="entry-detail" id="detail-ekta">
-          <div class="entry-detail-inner">
-            <ul class="bullets">
-              <li>Developing full-stack features for a South Asian performing arts platform in TypeScript and React, contributing to client-side UI and backend service layers</li>
-              <li>Architecting a Competition/Team Acceptance Tracking system supporting 80+ competitions and 330+ teams, streamlining acceptance notifications and enabling teams to accept or decline offers directly on the platform</li>
-              <li>Writing internal documentation for the platform's service layer and workflows, making it easier for new contributors to onboard and extend the codebase</li>
             </ul>
           </div>
         </div>
@@ -480,6 +479,7 @@
         <div class="label eyebrow">05 — Campus involvement</div>
         <h1>Outside the Classroom</h1>
       </div>
+      <div class="entry-row"><div><div class="t">Teaching Assistant</div><p>CMSC132 (Object-Oriented Programming) teaching assistant; running office hours and grading student work, helping students build a strong foundation in Java and OOP design.</p></div><div class="label m"></div></div>
       <div class="entry-row"><div><div class="t">Technica</div><p>Food sponsorship organizer for UMD's hackathon for underrepresented genders.</p></div><div class="label m"></div></div>
       <div class="entry-row"><div><div class="t">Maryland Mayuri</div><p>Sponsorship chair for a non-profit organization at the University of Maryland, College Park.</p></div><div class="label m"></div></div>
     </section>
@@ -592,18 +592,17 @@
     //concorderesearchtechnologies: "[add description of what you did at Concorde]",
     torchbearerai: "An AI-powered career coaching platform that remembers more than just facts about the user. It remembers the users way of thinking and functioning, serving as an on-demand career mentor. Currently, it has a law-student pack and a CS-student pack, enabling students from either field to prepare for interviews and come in confidently.",
     mitsubishielectric: "Through App Dev Club @ UMD, I worked on GoodReturn, an app that streamlines the return process. Customers can return packages of various sizes and leave it out on their doorstep for drivers to arrive, pick it up, and return it to the appropriate carrier.",
-    ekta: "Ekta is a common application platform for various South Asian Performing Arts circuits. It simplifies the application, decision, and information management for collegiate teams and circuits across the country.",
-    testugo: "A real-time, location-based campus app that guides students and visitors through personalized tours, event alerts, and follow-ups based on their interests, using location data to power features like major-based campus tours and proximity alerts for nearby events. Currently in prototyping: building out sensor tech, data collection design, and field testing, with room for students to shape future use cases."
+    ekta: "Ekta is a common application platform for various South Asian Performing Arts circuits. It simplifies the application, decision, and information management for collegiate teams and circuits across the country."
   };
 
   var COMMANDS = {
-    whoami: "I'm Harshita, a CS + Math student at the University of Maryland. I’m from New Jersey (the best state, might I say!) and came to UMD for my undergrad! I’m passionate about building technology that positively impacts people and businesses, whether directly or indirectly.",
+    whoami: "I'm Harshita, a CS + Math student at the University of Maryland. I’m from New Jersey (the best state, might I say!). I’m passionate about building technology that positively impacts people and businesses, whether directly or indirectly.",
     now: "I am currently building an LLM router that picks Claude's model tier per prompt. I am also working as a part-time SWE intern @ Concorde Research Technologies.",
     education: "Bachelors of Science in Computer Science and Math. Expected graduation is May 2028. Completed coursework in object oriented programming, discrete math, operating systems, and more! Currently taking algorithms and organization of programming languages.",
-    experience: "Concorde Research Technologies - since Sept 2026\nTestuGo (UMD Vertically Integrated Projects) - since Sept 2026\nTorchbearer AI - May 2026 to Aug 2026\nEkta - June 2026 to present\nMitsubishi (via UMD App Dev Club) - Feb 2026 to May 2026\ntype /whatis [name] for details on any of these",
+    experience: "Concorde Research Technologies - since Sept 2026\nEkta - June 2026 to present\nTorchbearer AI - May 2026 to Aug 2026\nMitsubishi (via UMD App Dev Club) - Feb 2026 to May 2026\ntype /whatis [name] for details on any of these",
     research: "HCI research - Jan 2026 to present\nAgentic AI / PDE research - June 2026 to present",
     projects: "LLM Router - a routing layer that picks Claude's model tier per prompt. Try it live on the Projects page.\nMini-redis\nSkillSwap - peer-to-peer skill exchange platform\nClaude Agent SDK Patterns - a Claude Code skill teaching correct use of the Claude Agent SDK\nmore coming soon",
-    campus: "Technica - food sponsorship organizer\nMaryland Mayuri — sponsorship chair",
+    campus: "Teaching Assistant - CMSC132 (Object-Oriented Programming)\nTechnica - food sponsorship organizer\nMaryland Mayuri — sponsorship chair",
     hobbies: "Baking/cooking\nPress-ons - check the gallery on the Hobbies page",
     stack: "Languages — Java, Python, C++, C, TypeScript, SQL, HTML/CSS/JS\nFrameworks — React.js, Node.js, React Native, FastAPI, Scikit-learn, Unity, OpenCV\nAI/ML — RAG, system prompt design, MCP, agentic frameworks, neural PDE solvers, operator learning\nTools — Git, AWS, REST APIs, Android Studio, Jira\nCertified AWS AI Practitioner (AIF-C01)",
     certifications: "AWS AI Practitioner (AIF-C01)\nClaude Code in Action",
